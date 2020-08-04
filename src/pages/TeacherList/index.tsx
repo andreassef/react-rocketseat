@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles.css';
+import '../../assets/styles/global.css';
 import PageHeader from '../../components/PageHeader';
+import TeacherItem from '../../components/TeacherItem';
 
 function TeacherList() {
     return (
@@ -24,7 +26,14 @@ function TeacherList() {
                         <input type="text" id="time"/>
                     </div>
                 </form>
-            </PageHeader> 
+            </PageHeader>
+
+            <main>
+                <TeacherItem />
+                <TeacherItem />
+                <TeacherItem />
+                <TeacherItem />
+            </main> 
         </div>
     )
 }
